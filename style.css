@@ -1,33 +1,46 @@
+/* GENERAL */
+body {
+    margin: 0;
+    background-color: rgb(221, 216, 232);
+
+}
 #main {
-    background-color: purple;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 1rem;
 }
 
+/* HEADER */
 #title {
-    font-size: 1.75rem;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(35, 23, 86);
 }
 
 #top {
-    background-color: blue;
+    background-color: rgb(151, 169, 208);
     display: flex;
-    justify-content: space-between;
     margin: 2rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
+    color: rgb(44, 40, 115);
+    border-radius: 2rem;
 }
 
 #sub-title {
-    font-size: 1.5rem;
+    font-size: 3em;
     padding: 2rem;
+    text-align: center;
+    flex: 1 1 60%;
+    align-self: center;
 }
 
 #img-div {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
     padding: 2rem;
-    
+    flex: 1 1 40%;
+    align-items: center;
 }
 
 img {
@@ -35,38 +48,53 @@ img {
     height: auto;
     width: 15rem;
     border-radius: 4.5%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 1rem;
 }
 
 #img-caption {
     margin: 0.5rem;
     padding: 0.5rem;
+    text-align: left;
 }
 
+/* MAIN CONTENT */
 #tribute-info {
-
+    
 }
 
 #tribute-title {
-
+    
 }
 
+/* TIMELINE */
 #tribute-timeline {
-
+    
 }
 
 ul {
-
+    
 }
 
 li {
-
+    
 }
 
 #tribute-quote {
-
+    
 }
 
+/* FOOTER */
 #bottom {
+    
+}
 
+/* MEDIA QUERY */
+@media screen and (max-width: 700px) {
+    #top {
+        flex-direction: column;
+    }
+    body {
+        font-size: 10px; /*need to check if correct on real mobile*/
+    }
 }
